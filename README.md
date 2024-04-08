@@ -64,20 +64,20 @@ docker run --name my-redis-container -d -p 6379:6379 redis
 ```code
 maven clean install
 ```
+```code
+java -jar target/kredinbizde-discovery-0.0.1-SNAPSHOT.jar
 ```
-code java -jar target/kredinbizde-discovery-0.0.1-SNAPSHOT.jar
+```code
+java -jar target/kredinbizde-gw-0.0.1-SNAPSHOT.jar
 ```
+```code
+java -jar target/kredinbizde-service-0.0.1-SNAPSHOT.jar
 ```
-code java -jar target/kredinbizde-gw-0.0.1-SNAPSHOT.jar
+```code
+java -jar target/akbank-service-0.0.1-SNAPSHOT.jar
 ```
-```
-code java -jar target/kredinbizde-service-0.0.1-SNAPSHOT.jar
-```
-```
-code java -jar target/akbank-service-0.0.1-SNAPSHOT.jar
-```
-```
-code java -jar target/notification-service-0.0.1-SNAPSHOT.jar
+```code
+java -jar target/notification-service-0.0.1-SNAPSHOT.jar
 ```
 
 

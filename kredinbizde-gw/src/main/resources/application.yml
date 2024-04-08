@@ -1,0 +1,13 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: kredinbizde-gw
+  cloud:
+    gateway:
+      routes:
+        - id: kredinbizde-service
+          uri: lb://KREDINBIZDE-SERVICE
+          predicates:
+            - Path=/api/v1/**
+

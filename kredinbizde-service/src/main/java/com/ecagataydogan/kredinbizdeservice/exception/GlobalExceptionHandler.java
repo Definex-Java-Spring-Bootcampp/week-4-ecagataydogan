@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
     @ExceptionHandler(UserNotFoundException.class)
     public ResponseEntity<ExceptionResponse> handleUserNotFoundException(UserNotFoundException userNotFoundException) {
+        //Hataları loglama neden yok?
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
                 .body(prepareExceptionResponse(userNotFoundException, HttpStatus.NOT_FOUND));
